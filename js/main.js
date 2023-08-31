@@ -11,3 +11,13 @@ ScrollReveal().reveal('.l3', {reset: true, delay: 300, origin: "left", distance:
 ScrollReveal().reveal('.r3', {reset: true, delay: 300, origin: "right", distance: '60px'});
 ScrollReveal().reveal('.t6', {reset: true, delay: 600, origin: "top", distance: '60px'});
 ScrollReveal().reveal('.t3', {reset: true, delay: 300, origin: "top", distance: '60px'});
+
+var typed = new Typed('#element', {
+    strings: ['negócio?', 'trabalho?', 'projeto?'],
+    typeSpeed: 100,
+    loop: true,
+    loopCount: Infinity,
+    backDelay: 1000,
+    backSpeed: 100,
+    showCursor: true,
+});
