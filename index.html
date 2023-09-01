@@ -1,163 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/Gear.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/Gear.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>GUI CORTES │ TM</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <!-- cabeçalho -->  
-        <header>
-          <nav class="bg-white px-4 lg:px-6 py-5">
-              <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                  <a href="#" class="flex items-center">
-                      <span class="self-center text-base whitespace-nowrap">gui cortes</span>
-                  </a>
-                  
-                  <div class="flex items-center lg:order-2">
-                      <button class="inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 duration-300 ease-in-out">contato
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                      </button>
-                      
-                      <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:text-white focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                          <span class="sr-only">abrir menu</span>
-                          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                      </button>
-                  </div>
-                  
-                  <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                      <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
-                          <li>
-                              <a href="#" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">sobre</a>
-                          </li>
+      <!-- cabeçalho -->
+      <header>
+        <nav class="bg-white px-4 lg:px-6 py-5">
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+          >
+            <a href="#" class="flex items-center">
+              <span class="self-center text-base whitespace-nowrap"
+                >gui cortes</span
+              >
+            </a>
 
-                          <li>
-                            <a href="#etapas" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">vantagens</a>
-                          </li>
+            <div class="flex items-center lg:order-2">
+              <button
+                class="inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 duration-300 ease-in-out"
+              >
+                contato
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
 
-                          <li>
-                            <a href="#projetos" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">projetos</a>
-                          </li> 
-
-                          <li>
-                            <a href="#duvidas" class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500">dúvidas</a>
-                          </li> 
-
-                      </ul>
-                  </div>
-              </div>
-          </nav>
-      </header>
-
-        <!-- corpo -->
-        <section class="text-gray-600 body-font h-screen body">
-          <div class="container px-5 py-24 mx-auto text-center">
-
-            <div class="flex flex-col text-center mb-5 mt-16">
-              <h1 class=" font-bold title-font mb-4 text-gray-400 text-5xl select-none">
-                Já pensou em um site <br> com a cara do seu <span id="element" class="text-yellow-500"></span>
-              </h1>
-              <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-gray-400">
-                você tem uma visão para o seu negócio ou projeto, mas não sabe <br>
-                como transformar em realidade? 
-              </p>
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:text-white focus:ring-gray-600"
+                aria-controls="mobile-menu-2"
+                aria-expanded="false"
+              >
+                <span class="sr-only">abrir menu</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
             </div>
 
-            <button class="duration-300 ease-in-out inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500">contato
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+            <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500"
+                    >sobre</a
+                  >
+                </li>
 
-            <button class="duration-300 ease-in-out inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-yellow-500 md:mt-0 bg-gray-200 hover:bg-yellow-500 hover:text-white">contato
-            </button>
+                <li>
+                  <a
+                    href="#etapas"
+                    class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500"
+                    >vantagens</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#projetos"
+                    class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500"
+                    >projetos</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#duvidas"
+                    class="block py-2 pl-3 text-gray-600 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 hover:text-yellow-500"
+                    >dúvidas</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </nav>
+      </header>
+
+      <!-- corpo -->
+      <section class="text-gray-600 body-font h-screen body">
+        <div class="container px-5 py-24 mx-auto text-center">
+          <div class="flex flex-col text-center mb-5 mt-16">
+            <h1
+              class="font-bold title-font mb-4 text-gray-400 text-5xl select-none"
+            >
+              Já pensou em um site <br />
+              com a cara do seu
+              <span id="element" class="text-yellow-500"></span>
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-gray-400">
+              você tem uma visão para o seu negócio ou projeto, mas não sabe
+              <br />
+              como transformar em realidade?
+            </p>
+          </div>
+
+          <button
+            class="duration-300 ease-in-out inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-white md:mt-0 bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500"
+          >
+            contato
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-1"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <button
+            class="duration-300 ease-in-out inline-flex items-center saibamais border-0 py-1 px-4 focus:outline-none rounded-full text-yellow-500 md:mt-0 bg-gray-200 hover:bg-yellow-500 hover:text-white"
+          >
+            contato
+          </button>
+        </div>
+      </section>
     </main>
 
     <!-- linha do tempo -->
     <section class="text-white body-font bg-yellow-500">
-      <div class="text-5xl font-bold text-center pt-24 c3" id="etapas">Nós temos a solução para você</div>
+      <div class="text-5xl font-bold text-center pt-24 c3" id="etapas">
+        Nós temos a solução para você
+      </div>
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div
+            class="h-full w-6 absolute inset-0 flex items-center justify-center"
+          >
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
 
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">1</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row b3">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+          <div
+            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"
+          >
+            1
+          </div>
+          <div
+            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row b3"
+          >
+            <div
+              class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-12 h-12"
+                viewBox="0 0 24 24"
+              >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font mb-1 text-xl">Presença Digital</h2>
-              <p class="leading-relaxed text-justify">Hoje, informações estão a um clique de distância e seus potenciais clientes buscam facilidade e acessibilidade. Não fique de fora, seja parte da revolução digital e conquiste novas oportunidades.</p>
+              <h2 class="font-medium title-font mb-1 text-xl">
+                Presença Digital
+              </h2>
+              <p class="leading-relaxed text-justify">
+                Hoje, informações estão a um clique de distância e seus
+                potenciais clientes buscam facilidade e acessibilidade. Não
+                fique de fora, seja parte da revolução digital e conquiste novas
+                oportunidades.
+              </p>
             </div>
           </div>
-
-          </div>
-          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div
+            class="h-full w-6 absolute inset-0 flex items-center justify-center"
+          >
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">2</div>
-          <div class="b4 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+          <div
+            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"
+          >
+            2
+          </div>
+          <div
+            class="b4 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+          >
+            <div
+              class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-12 h-12"
+                viewBox="0 0 24 24"
+              >
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font mb-1 text-xl">Design Personalizado</h2>
-              <p class="leading-relaxed text-justify">Cada empresa é única, e seu site deve refletir isso. Nossos serviços de desenvolvimento web incluem design personalizado que capta a essência da sua marca.</p>
+              <h2 class="font-medium title-font mb-1 text-xl">
+                Design Personalizado
+              </h2>
+              <p class="leading-relaxed text-justify">
+                Cada empresa é única, e seu site deve refletir isso. Nossos
+                serviços de desenvolvimento web incluem design personalizado que
+                capta a essência da sua marca.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div
+            class="h-full w-6 absolute inset-0 flex items-center justify-center"
+          >
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">3</div>
-          <div class="b5 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+          <div
+            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"
+          >
+            3
+          </div>
+          <div
+            class="b5 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+          >
+            <div
+              class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-12 h-12"
+                viewBox="0 0 24 24"
+              >
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font mb-1 text-xl">Eficiência e Escalabilidade</h2>
-              <p class="leading-relaxed text-justify">Seu sucesso digital merece uma base sólida. Nossa abordagem oferece eficiência com escalabilidade. Desenvolvemos soluções que atendam suas necessidades, mantendo um desempenho digno para seus clientes.</p>
+              <h2 class="font-medium title-font mb-1 text-xl">
+                Eficiência e Escalabilidade
+              </h2>
+              <p class="leading-relaxed text-justify">
+                Seu sucesso digital merece uma base sólida. Nossa abordagem
+                oferece eficiência com escalabilidade. Desenvolvemos soluções
+                que atendam suas necessidades, mantendo um desempenho digno para
+                seus clientes.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div
+            class="h-full w-6 absolute inset-0 flex items-center justify-center"
+          >
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm">4</div>
-          <div class="b6 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+          <div
+            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-white text-yellow-500 relative z-10 title-font font-medium text-sm"
+          >
+            4
+          </div>
+          <div
+            class="b6 flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+          >
+            <div
+              class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-yellow-500 rounded-full inline-flex items-center justify-center"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-12 h-12"
+                viewBox="0 0 24 24"
+              >
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font mb-1 text-xl">Engajamento de Clientes</h2>
-              <p class="leading-relaxed text-justify">Encante seus clientes com um ambiente totalmente a cara da sua empresa, e que foge das amarras visuais de uma rede social.</p>
+              <h2 class="font-medium title-font mb-1 text-xl">
+                Engajamento de Clientes
+              </h2>
+              <p class="leading-relaxed text-justify">
+                Encante seus clientes com um ambiente totalmente a cara da sua
+                empresa, e que foge das amarras visuais de uma rede social.
+              </p>
             </div>
           </div>
         </div>
@@ -167,25 +347,50 @@
     <!-- portifólio -->
     <div id="projetos"></div>
     <main class="mt-24">
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3">
+      <p
+        class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3"
+      >
         nosso portifólio
       </p>
-      <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4">
+      <h1
+        class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4"
+      >
         <span class="text-yellow-500">alguns projetos</span>
       </h1>
 
-      <section class="text-gray-600 body-font mb-32">
+      <section class="text-gray-600 body-font mb-20">
         <div class="container px-5 py-10 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
               <div class="h-full rounded-lg overflow-hidden c3">
-                <h1 class="title-font text-lg font-medium text-gray-500 mb-3 text-center">projeto</h1>
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg" src="https://dummyimage.com/721x401" alt="blog">
+                <h1
+                  class="title-font text-lg font-medium text-gray-500 mb-3 text-center"
+                >
+                  projeto
+                </h1>
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg"
+                  src="https://dummyimage.com/721x401"
+                  alt="blog"
+                />
                 <div class="px-2 py-3">
-                  <p class="leading-relaxed mb-3 text-justify">aqui vai uma breve descrição sobre o projeto que está sendo exibido na imagem acima</p>
+                  <p class="leading-relaxed mb-3 text-justify">
+                    aqui vai uma breve descrição sobre o projeto que está sendo
+                    exibido na imagem acima
+                  </p>
                   <div class="flex items-center flex-wrap">
-                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold">conheça
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <a
+                      class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold"
+                      >conheça
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
@@ -197,13 +402,34 @@
 
             <div class="p-4 md:w-1/3">
               <div class="h-full rounded-lg overflow-hidden c4">
-                <h1 class="title-font text-lg font-medium text-gray-500 mb-3 text-center">projeto</h1>
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg" src="https://dummyimage.com/721x401" alt="blog">
+                <h1
+                  class="title-font text-lg font-medium text-gray-500 mb-3 text-center"
+                >
+                  projeto
+                </h1>
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg"
+                  src="https://dummyimage.com/721x401"
+                  alt="blog"
+                />
                 <div class="px-2 py-3">
-                  <p class="leading-relaxed mb-3 text-justify">aqui vai uma breve descrição sobre o projeto que está sendo exibido na imagem acima</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold">conheça
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <p class="leading-relaxed mb-3 text-justify">
+                    aqui vai uma breve descrição sobre o projeto que está sendo
+                    exibido na imagem acima
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold"
+                      >conheça
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
@@ -215,13 +441,34 @@
 
             <div class="p-4 md:w-1/3">
               <div class="h-full rounded-lg overflow-hidden c5">
-                <h1 class="title-font text-lg font-medium text-gray-500 mb-3 text-center">projeto</h1>
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg" src="https://dummyimage.com/721x401" alt="blog">
+                <h1
+                  class="title-font text-lg font-medium text-gray-500 mb-3 text-center"
+                >
+                  projeto
+                </h1>
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg"
+                  src="https://dummyimage.com/721x401"
+                  alt="blog"
+                />
                 <div class="px-2 py-3">
-                  <p class="leading-relaxed mb-3 text-justify">aqui vai uma breve descrição sobre o projeto que está sendo exibido na imagem acima</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold">conheça
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <p class="leading-relaxed mb-3 text-justify">
+                    aqui vai uma breve descrição sobre o projeto que está sendo
+                    exibido na imagem acima
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-yellow-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:text-gray-500 font-bold"
+                      >conheça
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
@@ -234,12 +481,99 @@
         </div>
       </section>
 
+      <!--para quem é -->
+      <div id="persona"></div>
+      <p
+        class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3"
+        id="persona"
+      >
+        Para quem é um site
+      </p>
+      <h1
+        class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4"
+      >
+        <span class="text-yellow-500">Você precisa de um site?</span>
+      </h1>
+      <section class="text-gray-600 body-font mt-12">
+        
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base c5">
+              Ter um produto ou serviço de <strong class="text-yellow-500">qualidade</strong> mas não ter um site na era digital é semelhante a ter um prédio comercial em um bairro afastado: <strong class="text-yellow-500">Você não é visto!</strong> <br> 
+              Os seus clientes estão na internet, e para que eles te encontrem você só precisa de uma <strong class="text-yellow-500">página profissional</strong> que evidêncie a qualidade da sua solução.   
+            </p>
+          </div>
+          <div class="flex flex-wrap c5">
+            <div
+              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <h2
+                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+              >
+                Empresas 
+              </h2>
+              <p class="leading-relaxed text-base mb-4">
+                Quer elevar sua marca para outro nivel e alcaçar novos clientes? Sua empresa precisa de um site! 
+              </p>
+              
+            </div>
+            <div
+              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <h2
+                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+              >
+                Profissionais Liberais
+              </h2>
+              <p class="leading-relaxed text-base mb-4">
+                Quer mostrar seu portifólio de uma maneira profissional e atingir mais clientes? 
+              </p>
+              
+            </div>
+            <div
+              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <h2
+                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+              >
+                Artistas
+              </h2>
+              <p class="leading-relaxed text-base mb-4">
+                Mostre a sua arte ou design através de um portifólio com a sua cara e trabalhe para o mundo. Por que não?
+              </p>
+              
+            </div>
+            <div
+              class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <h2
+                class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"
+              >
+                Outros
+              </h2>
+              <p class="leading-relaxed text-base mb-4">
+                Qualquer pessoa ou profissional que deseja atingir seu público através da internet.
+              </p>
+              
+            </div>
+          </div>
+          <button
+            class=" c3 mt-5 mb-32 flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"
+          >
+            Conheça nossas soluções
+          </button>
+        </div>
+      </section>
+
       <!-- duvidas -->
       <div id="duvidas"></div>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3" id="duvidas">
+      <p
+        class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3"
+        id="duvidas"
+      >
         não ficou claro?
       </p>
-      <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4">
+      <h1
+        class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4"
+      >
         <span class="text-yellow-500">tire suas dúvidas</span>
       </h1>
 
@@ -248,87 +582,184 @@
           <div class="flex flex-wrap -m-4">
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c3">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-base text-gray-900 font-medium title-font mb-2">por onde as páginas são desenvolvidas?</h2>
-                <p class="leading-relaxed text-base text-justify">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                <h2 class="text-base text-gray-900 font-medium title-font mb-2">
+                  por onde as páginas são desenvolvidas?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  Fingerstache flexitarian street art 8-bit waist co, subway
+                  tile poke farm.
+                </p>
               </div>
             </div>
 
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c4">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <circle cx="6" cy="6" r="3"></circle>
                     <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    <path
+                      d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                    ></path>
                   </svg>
                 </div>
-                <h2 class="text-gray-900 font-medium title-font mb-2">qual é o prazo de entrega?</h2>
-                <p class="leading-relaxed text-base text-justify">Entregamos o seu site em até 7 dias utéis, podendo variar dependendo da complexibilidade do seu projeto.</p>
+                <h2 class="text-gray-900 font-medium title-font mb-2">
+                  qual é o prazo de entrega?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  Entregamos o seu site em até 7 dias utéis, podendo variar
+                  dependendo da complexibilidade do seu projeto.
+                </p>
               </div>
             </div>
 
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c5">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-base text-gray-900 font-medium title-font mb-2">meu site vai funcionar em celulares?</h2>
-                <p class="leading-relaxed text-base text-justify">Não só vai funcionar como ficará perfeito e funcional como o site no computador.</p>
+                <h2 class="text-base text-gray-900 font-medium title-font mb-2">
+                  meu site vai funcionar em celulares?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  Não só vai funcionar como ficará perfeito e funcional como o
+                  site no computador.
+                </p>
               </div>
             </div>
 
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c3">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-base text-gray-900 font-medium title-font mb-2">Preciso me preocupar com design?</h2>
-                <p class="leading-relaxed text-base text-justify">Não. Nós deixaremos seu site pronto e operando, com a cara que você desejar.</p>
+                <h2 class="text-base text-gray-900 font-medium title-font mb-2">
+                  Preciso me preocupar com design?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  Não. Nós deixaremos seu site pronto e operando, com a cara que
+                  você desejar.
+                </p>
               </div>
             </div>
 
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c4">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-base text-gray-900 font-medium title-font mb-2">Preciso me preocupar em escolher hospedagem e domínio?</h2>
-                <p class="leading-relaxed text-base text-justify">O domínio (o link do seu site) nós iremos escolher com sua ajuda, mas a hospedagem fica a seu critério se deseja ou não escolher.</p>
+                <h2 class="text-base text-gray-900 font-medium title-font mb-2">
+                  Preciso me preocupar em escolher hospedagem e domínio?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  O domínio (o link do seu site) nós iremos escolher com sua
+                  ajuda, mas a hospedagem fica a seu critério se deseja ou não
+                  escolher.
+                </p>
               </div>
             </div>
 
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="p-6 rounded-lg c5">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-200 text-yellow-500 mb-4"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-base text-gray-900 font-medium title-font mb-2">por onde as páginas são desenvolvidas?</h2>
-                <p class="leading-relaxed text-base text-justify">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                <h2 class="text-base text-gray-900 font-medium title-font mb-2">
+                  por onde as páginas são desenvolvidas?
+                </h2>
+                <p class="leading-relaxed text-base text-justify">
+                  Fingerstache flexitarian street art 8-bit waist co, subway
+                  tile poke farm.
+                </p>
               </div>
             </div>
           </div>
-  
         </div>
       </section>
 
       <!-- contato -->
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3" id="contato">
+      <p
+        class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 text-center c3"
+        id="contato"
+      >
         vamos conversar
       </p>
-      <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4">
+      <h1
+        class="sm:text-3xl text-2xl font-bold title-font text-gray-400 text-center c4"
+      >
         <span class="text-yellow-500">entre em contato</span>
       </h1>
 
@@ -336,78 +767,174 @@
         <div class="container px-5 py-10 mx-auto">
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <div class="flex flex-wrap -m-2">
-              <form class="flex flex-wrap -m-2" method="post" action="./js/send.php">
+              <form
+                class="flex flex-wrap -m-2"
+                method="post"
+                action="./js/send.php"
+              >
                 <div class="p-2 w-1/2">
                   <div class="relative l3">
-                    <label for="name" class="leading-7 text-sm text-gray-600">nome</label>
-                    <input type="text" id="nome" name="nome" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="name" class="leading-7 text-sm text-gray-600"
+                      >nome</label
+                    >
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      required
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
                   </div>
                 </div>
-    
+
                 <div class="p-2 w-1/2">
-                  <div class="relative r3" >
-                    <label for="email" class="leading-7 text-sm text-gray-600 ">telefone</label>
-                    <input type="tel" id="tel" name="tel" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  <div class="relative r3">
+                    <label for="email" class="leading-7 text-sm text-gray-600"
+                      >telefone</label
+                    >
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="tel"
+                      data-mask="(00) 0000-0000"
+                      data-mask-selectonfocus="true"
+                      required
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
                   </div>
                 </div>
 
                 <div class="p-2 w-full">
-                  <div class="relative c4" >
-                    <label for="email" class="leading-7 text-sm text-gray-600 ">email</label>
-                    <input type="email" id="email" name="email" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  <div class="relative c4">
+                    <label for="email" class="leading-7 text-sm text-gray-600"
+                      >email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
                   </div>
                 </div>
-                
-                
+
                 <div class="p-2 w-full">
                   <div class="relative c5">
-                    <label for="message" class="leading-7 text-sm text-gray-600">mensagem</label>
-                    <textarea id="mensagem" name="mensagem" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    <label for="message" class="leading-7 text-sm text-gray-600"
+                      >mensagem</label
+                    >
+                    <textarea
+                      id="mensagem"
+                      name="mensagem"
+                      required
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
                   </div>
                 </div>
-    
+
                 <div class="p-2 w-full t6">
-                  <input type="submit" value="enviar" class="flex mx-auto text-white border-0 py-2 px-8 focus:outline-none bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 rounded-full text-base cursor-pointer duration-300 ease-in-out">
+                  <input
+                    type="submit"
+                    value="enviar"
+                    class="flex mx-auto text-white border-0 py-2 px-8 focus:outline-none bg-yellow-500 hover:bg-gray-200 hover:text-yellow-500 rounded-full text-base cursor-pointer duration-300 ease-in-out"
+                  />
                 </div>
               </form>
 
-              <div class="p-2 w-full  mt-8 text-center">
-                <a href="mailto:marcowcorrea01@gmail.com" class="text-yellow-500">marcowcorrea01@gmail.com</a>
-                <p class="leading-normal my-5">-3,7818398, -49,5626172
-                  <br>breu branco - pará - brasil
+              <div class="p-2 w-full mt-8 text-center">
+                <a
+                  href="mailto:marcowcorrea01@gmail.com"
+                  class="text-yellow-500"
+                  >marcowcorrea01@gmail.com</a
+                >
+                <p class="leading-normal my-5">
+                  -3,7818398, -49,5626172 <br />breu branco - pará - brasil
                 </p>
                 <span class="inline-flex">
-                  <a href="#" data-tooltip-target="tooltip-facebook" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                  <a
+                    href="#"
+                    data-tooltip-target="tooltip-facebook"
+                    class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"
+                      />
                     </svg>
                     <span class="sr-only">Facebook</span>
-                </a>
-                <div id="tooltip-facebook" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                  </a>
+                  <div
+                    id="tooltip-facebook"
+                    role="tooltip"
+                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+                  >
                     nos dê um like no Facebook
                     <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-                
-                <a href="#" data-tooltip-target="tooltip-twitter" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </div>
+
+                  <a
+                    href="#"
+                    data-tooltip-target="tooltip-twitter"
+                    class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                      />
                     </svg>
                     <span class="sr-only">Twitter</span>
-                </a>
-                <div id="tooltip-twitter" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                  </a>
+                  <div
+                    id="tooltip-twitter"
+                    role="tooltip"
+                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+                  >
                     nos siga no Twitter
                     <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-                <a href="#" data-tooltip-target="tooltip-github" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"  >
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"clip-rule="evenodd" />
+                  </div>
+                  <a
+                    href="#"
+                    data-tooltip-target="tooltip-github"
+                    class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                      />
                     </svg>
                     <span class="sr-only">Github</span>
-                </a>
-                <div id="tooltip-github" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                  </a>
+                  <div
+                    id="tooltip-github"
+                    role="tooltip"
+                    class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+                  >
                     acesse nossos repositórios no Github
                     <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  </div>
                 </span>
               </div>
             </div>
@@ -415,48 +942,106 @@
         </div>
       </section>
       <!-- rodapé -->
-      <footer class="t3 bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8">
-        <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
-            &copy; 2023-2024 <a href="#" class="cursor-pointer" target="_blank">gui cortes</a>. todos direitos reservados.
+      <footer
+        class="t3 bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8"
+      >
+        <p
+          class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0"
+        >
+          &copy; 2023-2024
+          <a href="#" class="cursor-pointer" target="_blank">gui cortes</a>.
+          todos direitos reservados.
         </p>
         <div class="flex justify-center items-center space-x-1">
-          <a href="#" data-tooltip-target="tooltip-facebook" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
-              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-              </svg>
-              <span class="sr-only">Facebook</span>
+          <a
+            href="#"
+            data-tooltip-target="tooltip-facebook"
+            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="sr-only">Facebook</span>
           </a>
-          <div id="tooltip-facebook" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
-              nos dê um like no Facebook
-              <div class="tooltip-arrow" data-popper-arrow></div>
+          <div
+            id="tooltip-facebook"
+            role="tooltip"
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+          >
+            nos dê um like no Facebook
+            <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
-          
-          <a href="#" data-tooltip-target="tooltip-twitter" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500">
-              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
-              <span class="sr-only">Twitter</span>
+
+          <a
+            href="#"
+            data-tooltip-target="tooltip-twitter"
+            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+            <span class="sr-only">Twitter</span>
           </a>
-          <div id="tooltip-twitter" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
-              nos siga no Twitter
-              <div class="tooltip-arrow" data-popper-arrow></div>
+          <div
+            id="tooltip-twitter"
+            role="tooltip"
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+          >
+            nos siga no Twitter
+            <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
-          <a href="#" data-tooltip-target="tooltip-github" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"  >
-              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"clip-rule="evenodd" />
-              </svg>
-              <span class="sr-only">Github</span>
+          <a
+            href="#"
+            data-tooltip-target="tooltip-github"
+            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-white hover:text-gray-900 hover:bg-yellow-500"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="sr-only">Github</span>
           </a>
-          <div id="tooltip-github" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
-              acesse nossos repositórios no Github
-              <div class="tooltip-arrow" data-popper-arrow></div>
+          <div
+            id="tooltip-github"
+            role="tooltip"
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-yellow-500 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+          >
+            acesse nossos repositórios no Github
+            <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
-      </div>
+        </div>
       </footer>
     </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
