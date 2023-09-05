@@ -1,3 +1,5 @@
-<h3>🥰 &nbsp; gui cortes desenvolvimentoweb </h3>
 
-- 🌱 &nbsp; em desenvolvimento
+<h3>🥰 &nbsp; gui cortes </h3>
+
+🌱 &nbsp; repositório de desenvolvimento do site gui cortes
+
