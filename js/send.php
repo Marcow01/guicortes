@@ -18,7 +18,7 @@ try {
     $mail->Port = 587;
 
     $mail->setFrom($_POST["email"], $_POST["nome"], $_POST["tel"]);
-    $mail->addAddress('estrellachann@gmail.com');
+    $mail->addAddress('guicortes5500@gmail.com');
     $mail->isHTML(true);
     $mail->Subject = 'MENSAGEM';
     $mail->Body = "nome: {$_POST['nome']}<br>email: {$_POST['email']}<br>mensagem: {$_POST['mensagem']}<br>telefone: {$_POST["tel"]}";
