@@ -5,8 +5,22 @@
     scroll-behavior: smooth;
 }
 
+.instagram{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
 main{
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
+}
+
+::selection {
+    background-color: rgb(82, 82, 82);
+    color: rgb(234 179 8);
+}
+
+::-moz-selection {
+    background-color: rgb(82, 82, 82);
+    color: rgb(234 179 8);
 }
