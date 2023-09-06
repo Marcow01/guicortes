@@ -24,7 +24,7 @@ try {
     $mail->Body = "nome: {$_POST['nome']}<br>email: {$_POST['email']}<br>mensagem: {$_POST['mensagem']}<br>telefone: {$_POST["tel"]}";
 
     $mail->send();
-    header('Location:../index.html');
+    header('Location:../obrigado.html');
     exit();
 } catch (Exception $e) {
     echo "erro ao enviar o email: " . $mail->ErrorInfo;
